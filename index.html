@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <title>Saslagar Porfolio</title>
+</head>
+<body>
+    <div class="menuToggle" onclick="ToggleMenu();"></div>
+    <div class="navigation">
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="index.html" onmouseenter="changeImage('Daydream.png')">Home</a>
+                </li>
+                <li>
+                    <a href="About.html" onmouseenter="changeImage('cv saslagar.png')">About</a>
+                
+                </li>
+                <li>
+                    <a href="https://www.artstation.com/saslagar" onmouseenter="changeImage('marinerito.jpg')">Artstation</a>
+                </li>
+                <li>
+                    <a href="Work.html" onmouseenter="changeImage('brujitas.jpg')">Work</a>
+                
+                </li>
+                <li><a href="Contact me.html" onmouseenter="changeImage('Calaca antisecso.jpg')">Contact me</a></li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="Assets/Calaca antisecso.jpg" id="slider">
+        </div>
+    </div>
+    <script>
+        function changeImage(anything){
+            document.getElementById('slider').src = anything;
+        }
+        function ToggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
